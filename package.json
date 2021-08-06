@@ -1,0 +1,8 @@
+{
+  "name": "sfdx-monorepo-yarn-workspace",
+  "packageManager": "yarn@3.0.0",
+  "workspaces": [
+    "packages/sfdx-core-package",
+    "packages/sfdx-bonus-package"
+  ]
+}
