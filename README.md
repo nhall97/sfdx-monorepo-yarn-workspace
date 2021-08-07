@@ -30,9 +30,39 @@ yarn.lock
 ## Using yarn workspaces
 You can use yarn workspaces to manage multiple packages at the same time. https://yarnpkg.com/cli/workspaces/foreach
 
-Run all tests for every package (in our case, sfdx-core-package & sfdx-bonus-package)
+#### Run all tests for every package (in our case, sfdx-core-package & sfdx-bonus-package)
+
 `yarn workspaces foreach run test`
 
+Output:
+```
+Already have image: node
+➤ YN0000: 
+➤ YN0000: > sfdx-bonus-package@1.0.0 test:unit
+➤ YN0000: > sfdx-lwc-jest
+➤ YN0000: 
+➤ YN0000: No tests found, exiting with code 1
+➤ YN0000: Run with `--passWithNoTests` to exit with code 0
+➤ YN0000: In /workspace/packages/sfdx-bonus-package
+➤ YN0000:   1 file checked.
+➤ YN0000:   testMatch: **/__tests__/**/*.[jt]s?(x), **/?(*.)+(spec|test).[tj]s?(x) - 0 matches
+➤ YN0000:   testPathIgnorePatterns: /workspace/packages/sfdx-bonus-package/node_modules/, /workspace/packages/sfdx-bonus-package/test/specs/ - 1 match
+➤ YN0000:   testRegex:  - 0 matches
+➤ YN0000: Pattern:  - 0 matches
+➤ YN0000: 
+➤ YN0000: > sfdx-core-package@1.0.0 test:unit
+➤ YN0000: > sfdx-lwc-jest
+➤ YN0000: 
+➤ YN0000: No tests found, exiting with code 1
+➤ YN0000: Run with `--passWithNoTests` to exit with code 0
+➤ YN0000: In /workspace/packages/sfdx-core-package
+➤ YN0000:   1 file checked.
+➤ YN0000:   testMatch: **/__tests__/**/*.[jt]s?(x), **/?(*.)+(spec|test).[tj]s?(x) - 0 matches
+➤ YN0000:   testPathIgnorePatterns: /workspace/packages/sfdx-core-package/node_modules/, /workspace/packages/sfdx-core-package/test/specs/ - 1 match
+➤ YN0000:   testRegex:  - 0 matches
+➤ YN0000: Pattern:  - 0 matches
+➤ YN0000: Done in 4s 799ms
+```
 
 ## SFDX Command Validations
 | SFDX Command                                                                                                               | Workspace Command            | Working? |
