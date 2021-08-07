@@ -30,6 +30,17 @@ yarn.lock
 ## Using yarn workspaces
 You can use yarn workspaces to manage multiple packages at the same time. https://yarnpkg.com/cli/workspaces/foreach
 
+#### List installed workspaces
+`$ yarn workspaces list`
+
+Output:
+```
+➤ YN0000: .
+➤ YN0000: packages/sfdx-bonus-package
+➤ YN0000: packages/sfdx-core-package
+➤ YN0000: Done in 0s 4ms
+```
+
 #### Run all tests for every package (in our case, sfdx-core-package & sfdx-bonus-package)
 
 `yarn workspaces foreach run test`
