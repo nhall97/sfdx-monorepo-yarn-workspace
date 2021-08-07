@@ -7,4 +7,4 @@ steps:
   args: ['workspaces', 'list']
 - name: node
   entrypoint: yarn
-  args: ['test']
+  args: ['workspaces','run', 'test']
