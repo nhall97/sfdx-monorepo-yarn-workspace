@@ -1,4 +1,4 @@
-# sfdx-monorepo-workspace
+# sfdx-monorepo-yarn-workspace
 sfdx monorepo using yarn Workspaces to work with multiple sfdx projects eg. packages
 
 This is to provide a monorepo structure to our sfdx packages. The idea being that you can clone one repo, and work across many packages - to help make dependency management easier as well as refactoring.
