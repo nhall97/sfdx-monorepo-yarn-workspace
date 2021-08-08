@@ -4,5 +4,8 @@
   "workspaces": [
     "packages/sfdx-core-package",
     "packages/sfdx-bonus-package"
-  ]
+  ],
+  "dependencies": {
+    "sfdx-cli": "^7.112.1"
+  }
 }

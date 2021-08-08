@@ -11051,6 +11051,8 @@ fsevents@^2.1.2:
 "sfdx-monorepo-yarn-workspace@workspace:.":
   version: 0.0.0-use.local
   resolution: "sfdx-monorepo-yarn-workspace@workspace:."
+  dependencies:
+    sfdx-cli: ^7.112.1
   languageName: unknown
   linkType: soft
 
