@@ -4,6 +4,9 @@ steps:
   args: ['install']
 - name: node
   entrypoint: yarn
+  args: ['echo', 'y', '|', 'sfdx', 'plugins:install', '@dxatscale/sfpowerscripts']
+- name: node
+  entrypoint: yarn
   args: ['workspaces', 'list']
 - name: node
   entrypoint: yarn
