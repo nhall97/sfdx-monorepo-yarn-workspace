@@ -13,5 +13,6 @@
     "@dxatscale/sfpowerscripts": "^8.1.10",
     "sfdx-cli": "^7.112.1",
     "sfpowerkit": "^3.2.2"
-  }
+  },
+  "version": "1.0.0"
 }
