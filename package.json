@@ -5,7 +5,13 @@
     "packages/sfdx-core-package",
     "packages/sfdx-bonus-package"
   ],
+  "scripts": {
+    "validate-sfdx": "sfdx -v",
+    "add-sfpowerkit": "echo 'y' | sfdx plugins:install isvte-sfdx-plugin"
+  },
   "dependencies": {
-    "sfdx-cli": "^7.112.1"
+    "@dxatscale/sfpowerscripts": "^8.1.10",
+    "sfdx-cli": "^7.112.1",
+    "sfpowerkit": "^3.2.2"
   }
 }
