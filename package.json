@@ -1,9 +1,8 @@
 {
   "name": "sfdx-monorepo-yarn-workspace",
-  "packageManager": "yarn@3.0.0",
+  "packageManager": "yarn@3.0.2",
   "workspaces": [
-    "packages/sfdx-core-package",
-    "packages/sfdx-bonus-package"
+    "packages/*"
   ],
   "scripts": {
     "validate-sfdx": "sfdx -v",
