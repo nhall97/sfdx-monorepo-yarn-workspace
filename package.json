@@ -5,8 +5,7 @@
     "packages/*"
   ],
   "scripts": {
-    "validate-sfdx": "sfdx -v",
-    "add-sfpowerkit": "echo 'y' | sfdx plugins:install isvte-sfdx-plugin"
+    "validate-sfdx": "sfdx -v"
   },
   "dependencies": {
     "@dxatscale/sfpowerscripts": "^8.1.10",
