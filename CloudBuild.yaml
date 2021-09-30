@@ -5,6 +5,3 @@ steps:
 - name: node
   entrypoint: yarn
   args: ['workspaces', 'list']
-- name: node
-  entrypoint: yarn
-  args: ['workspaces','foreach','run','test', '--passWithNoTests']
